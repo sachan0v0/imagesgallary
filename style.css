@@ -1,0 +1,31 @@
+body {
+    background-color: aquamarine;
+}
+
+h1 {
+    text-align: center;
+    font-size: 2.5rem;
+    color: aliceblue;
+    margin: 30px 0 50px;/*上　左右　下*/
+
+}
+
+.gallery {
+    margin: 10px 50px;
+    text-align: center;
+
+}
+
+.gallery img {
+    width: 380px;
+    height: 220px;
+    object-fit: cover; /*画像の大きさを変えても画像の比率が一定に保たれる*/
+    padding: 10px;
+    filter: grayscale(100%);/*曇りをかけるホバーしたら晴れる感じにする*/
+    transition: 0.7s;
+}
+
+.gallery img:hover {
+    filter: grayscale(0);
+    transform: scale(1.1);/*画像サイズをホバー時に大きくする*/
+}
